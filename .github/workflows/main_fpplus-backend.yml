@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: '20.x'
+          node-version: '20'
 
       - name: npm install, build, and test
         run: |
@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_1911B3B0F18C464DA1E5162204E743AC }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D68BBCB95A0447419A1CB0F303A76712 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3E929FE7B0444AD9A517D28E918E192D }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_562C7D9283584BEA99BED80A668CF71C }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_794B0DD5C25742E5BF53129CD461B4F2 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_CB4137C3D32742AFAD2756405203A271 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -62,4 +62,4 @@ jobs:
           app-name: 'fpplus-backend'
           slot-name: 'Production'
           package: .
-        
+          
