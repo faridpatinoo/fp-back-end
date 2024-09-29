@@ -62,4 +62,4 @@ jobs:
           app-name: 'fpplus-backend'
           slot-name: 'Production'
           package: .
-          
+        
