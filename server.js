@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 
 const app = require('./app')
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 const db_password = process.env.PASSWORD;
 const db = `mongodb+srv://fcpatino5:${db_password}@cluster0.veqds.mongodb.net/mydatabase?retryWrites=true&w=majority&appName=Cluster0`;
 
