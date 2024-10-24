@@ -6,39 +6,39 @@ const videoSchema = new mongoose.Schema({
     required: true,
     trim: true
 
-  },description: {
+  }, description: {
     type: String
 
-  },top: {
+  }, top: {
     type: Number,
     required: true
 
-  },image: {
+  }, image: {
     type: String,
     required: true
-  
-  },video: {
+
+  }, video: {
     type: String,
     required: true
-  
-  },brand: {
+
+  }, brand: {
     type: String,
     trim: true
-  
-  },category: {
+
+  }, category: {
     type: String,
     enum: ['animations', 'facebook', 'reels', 'originals', 'tv', 'end-card', 'youtube'],
     required: true
-  
-  },brand: {
+
+  }, brand: {
     type: String,
-  
-  },type: {
+
+  }, type: {
     type: String,
     enum: ['horizontal', 'vertical', 'square', 'animation'],
     required: true
 
-  },year: {
+  }, year: {
     type: Number,
     required: true
 
