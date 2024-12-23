@@ -1,10 +1,10 @@
 const express = require('express');
-const videoController = require('./videoController');
+const brandController = require('../1-Controllers/brandController');
 
 const router = express.Router();
 
 router
   .route('/')
-  .get(videoController.getAllVideos);
+  .get(brandController.getAllBrands);
 
 module.exports = router;
