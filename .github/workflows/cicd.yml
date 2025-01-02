@@ -11,12 +11,18 @@ jobs:
     steps:
       - name: Checkout Source
         uses: actions/checkout@v3
+        
       - name: Set up Node.js version
-      - uses: actions/setup-node@v4
+        uses: actions/setup-node@v4
         with:
-          node-version: '20.18.0'
+          node-version: '20.18.0'  # Updated to Node 20.18.0
+        
       - name: Install Dependencies
         run: npm install
+        
+      - name: Build Project (if necessary)
+        run: npm run build  # Only if you have a build step
+
       - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
         with:
