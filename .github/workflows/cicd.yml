@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v4
         with:
-          node-version: '20.18.0'  # Updated to Node 20.18.0
+          node-version: '20.18.0'  # Updated to Node 20.18.0 from 14.x
         
       - name: Install Dependencies
         run: npm install
