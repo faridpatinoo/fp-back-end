@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const app = require('./app')
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('FP+backend');
 })
 
 const db_password = process.env.PASSWORD;
